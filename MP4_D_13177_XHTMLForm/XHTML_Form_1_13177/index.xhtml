@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Lomba</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Lomba</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table cellspacing="4" cellpadding="4" border="1"
+                style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td>
+                    <label for="namatim"><strong>Nama Tim</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="namatim" name="namatim" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ketua"><strong>Nama Ketua Tim</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="ketua" name="ketua" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jumlah"><strong>Jumlah Anggota</strong></label>
+                </td>
+                <td>
+                    <select id="jumlah" name="jumlah">
+                        <option>1 Orang</option>
+                        <option>2 Orang</option>
+                        <option>3 Orang</option>
+                        <option>4 Orang</option>
+                        <option>5 Orang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telepon"><strong>Nomor Telepon (Salah satu Anggota)</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="telepon" name="telepon" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="universitas">
+                        <strong>Asal Universitas</strong>
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="universitas" name="universitas" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;">
+                    <strong>Bidang Lomba</strong>
+                </td>
+                <td>
+                    <p>
+                        <input type="checkbox" id="coding" name="bidang"
+                                value="Coding" />
+                        <label for="coding">Coding</label>
+                        <input type="checkbox" id="desain" name="bidang"
+                                value="Desain" />
+                        <label for="desain">Desain</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="video" name="bidang"
+                                value="Video" />
+                        <label for="video">Video</label>
+                        <input type="checkbox" id="essay" name="bidang"
+                                value="Essay" />
+                        <label for="essay">Essay</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Jenis Peserta</strong>
+                </td>
+                <td>
+                    <input type="radio" id="mahasiswa" name="peserta"
+                            value="Mahasiswa" />
+                    <label for="mahasiswa">Mahasiswa</label>
+                    <input type="radio" id="umum" name="peserta"
+                            value="Umum" />
+                    <label for="umum">Umum</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;">
+                    <label for="deskripsi">
+                        <strong>Deskripsi Karya</strong>
+                    </label>
+                </td>
+                <td>
+                    <textarea id="deskripsi" name="deskripsi"
+                            rows="10" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top;">
+                    <label for="alasan">
+                        <strong>Alasan Mengikuti Lomba</strong>
+                    </label>
+                </td>
+                <td>
+                    <textarea id="alasan" name="alasan"
+                            rows="7" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="filekarya"><strong>File Karya</strong></label>
+                </td>
+                <td>
+                    <input type="file" id="filekarya" name="filekarya"
+                            accept="application/pdf, image/jpeg, image/png" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" name="daftar"
+                            value="Daftar Lomba" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>
