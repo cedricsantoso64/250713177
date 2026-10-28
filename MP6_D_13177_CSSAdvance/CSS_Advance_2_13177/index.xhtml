@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Pendaftaran Kegiatan Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Kegiatan Mahasiswa</h1>
+        <p class="pengantar">Tersedia untuk Mahasiswa FTI 25/26</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <h3>Informasi Pendaftar</h3>
+
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Lengkap</label></td>
+                    <td><input type="text" id="nama" name="nama" /></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">NPM</label></td>
+                    <td><input type="text" id="nim" name="nim" /></td>
+                </tr>
+                <tr>
+                    <td><label for="prodi">Program Studi</label></td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option value="informatika">Informatika</option>
+                            <option value="sistem_informasi">Sistem Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" id="laki" name="gender" value="laki" />
+                        <label for="laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="gender" value="perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Preferensi Kegiatan</h3>
+
+            <table>
+                <tr>
+                    <td>Jenis Kegiatan</td>
+                    <td>
+                        <input type="radio" id="seminar" name="kegiatan" value="seminar" />
+                        <label for="seminar">Seminar</label><br />
+                        <input type="radio" id="pelatihan" name="kegiatan" value="pelatihan" />
+                        <label for="pelatihan">Pelatihan</label><br />
+                        <input type="radio" id="diskusi" name="kegiatan" value="diskusi" />
+                        <label for="diskusi">Diskusi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bidang Minat</td>
+                    <td>
+                        <input type="checkbox" id="teknologi" name="minat" value="teknologi" />
+                        <label for="teknologi">Teknologi</label><br />
+                        <input type="checkbox" id="organisasi" name="minat" value="organisasi" />
+                        <label for="organisasi">Organisasi</label><br />
+                        <input type="checkbox" id="karier" name="minat" value="karier" />
+                        <label for="karier">Hobi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="waktu">Waktu Kegiatan</label></td>
+                    <td>
+                        <select id="waktu" name="waktu">
+                            <option value="pagi">Pagi</option>
+                            <option value="siang">Siang</option>
+                            <option value="sore">Sore</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Informasi Tambahan</h3>
+
+            <table>
+                <tr>
+                    <td><label for="harapan">Tujuan Mengikuti Kegiatan</label></td>
+                    <td>
+                        <textarea id="harapan" name="harapan" rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="bukti">Bukti Pembayaran</label></td>
+                    <td><input type="file" id="bukti" name="bukti" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="bagian-tombol">
+                        <div class="tombol">
+                            <input type="submit" id="kirim" name="kirim" value="Daftar Sekarang" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

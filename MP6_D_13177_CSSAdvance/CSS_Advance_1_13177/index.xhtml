@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pendaftaran Kompetisi Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Pendaftaran Kompetisi Mahasiswa</h1>
+
+    <p class="pengantar">
+         Lengkapi data tim dan informasi karya Anda untuk mengikuti kompetisi.
+    </p>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td><label for="namatim"><strong>Nama Tim</strong></label></td>
+                <td><input type="text" id="namatim" name="namatim" size="30" /></td>
+            </tr>
+            <tr>
+                <td><label for="ketua"><strong>Ketua Tim</strong></label></td>
+                <td><input type="text" id="ketua" name="ketua" size="30" /></td>
+            </tr>
+            <tr>
+                <td><label for="jumlah"><strong>Total Anggota Tim</strong></label></td>
+                <td>
+                    <select id="jumlah" name="jumlah">
+                        <option>1 Orang</option>
+                        <option>2 Orang</option>
+                        <option>3 Orang</option>
+                        <option>4 Orang</option>
+                        <option>5 Orang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="telepon"><strong>Nomor Kontak Tim</strong></label></td>
+                <td>
+                    <input type="text" id="telepon" name="telepon" size="30" />
+                    <p class="catatan">Masukkan Nomor Telepon seluruh anggota (wajib).</p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="universitas"><strong>Asal Perguruan Tinggi</strong></label></td>
+                <td><input type="text" id="universitas" name="universitas" size="30" /></td>
+            </tr>
+            <tr>
+                <td><strong>Kategori Kompetisi</strong></td>
+                <td>
+                    <p>
+                        <input type="checkbox" id="coding" name="bidang" value="Coding" />
+                        <label for="coding">Pemrograman</label>
+                        <input type="checkbox" id="desain" name="bidang" value="Desain" />
+                        <label for="desain">Desain Kreatif</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="video" name="bidang" value="Video" />
+                        <label for="video">Produksi Video</label>
+                        <input type="checkbox" id="essay" name="bidang" value="Essay" />
+                        <label for="essay">Penulisan Esai</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Status Peserta</strong></td>
+                <td>
+                    <input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" />
+                    <label for="mahasiswa">Mahasiswa aktif</label>
+                    <input type="radio" id="umum" name="peserta" value="Umum" />
+                    <label for="umum">Peserta umum</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="deskripsi"><strong>Penjelasan Karya</strong></label></td>
+                <td>
+                    <textarea id="deskripsi" name="deskripsi" rows="10" cols="30"></textarea>
+                    <p class="catatan">Jelaskan ide, tujuan, dan keunggulan karya yang diajukan.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alasan"><strong>Motivasi Mengikuti Kompetisi</strong></label></td>
+                <td>
+                    <textarea id="alasan" name="alasan" rows="7" cols="30"></textarea>
+                    <p class="catatan">Mengapa tim anda ingin berpatisipasi dalam kompetisi ini?</p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="filekarya"><strong>Lampiran Karya</strong></label></td>
+                <td>
+                    <input type="file" id="filekarya" name="filekarya"
+                        accept="application/pdf, image/jpeg, image/png" />
+                    <p class="catatan">Upload karya dengan format PDF, JPG, atau PNG.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bagian-tombol">
+                    <div class="tombol">
+                        <input type="submit" name="daftar" value="Kirim Pendaftaran" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

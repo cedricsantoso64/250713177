@@ -1,0 +1,113 @@
+body{
+    background-color: #F9FAFB;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #374151;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+h1{
+    text-align: center;
+    color: #1D4ED8;
+    margin-bottom: 10px;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.pengantar{
+    text-align: center;
+    color: #374151;
+    margin-bottom: 25px;
+}
+
+form{
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #D1D5DB;
+    border-left: 5px solid #FBBF24;
+}
+
+td{
+    border: 1px solid #D1D5DB;
+    padding: 12px;
+    vertical-align: top;
+}
+
+td:first-child{
+    width: 35%;
+    background-color: #F9FAFB;
+}
+
+input[type="text"],
+select,
+textarea{
+    width: 90%;
+    padding: 9px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #374151;
+    background-color: #FFFFFF;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin-right: 5px;
+    accent-color: #1D4ED8;
+}
+
+textarea{
+    resize: vertical;
+}
+
+input[type="file"]{
+    max-width: 100%;
+}
+
+input[type="submit"]{
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #374151;
+}
+
+.catatan{
+    color: #374151;
+    font-size: 13px;
+}
+
+.bagian-tombol{
+    background-color: #FFFFFF;
+}
+
+.tombol{
+    text-align: center;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus{
+    outline: 2px solid #FBBF24;
+    outline-offset: 1px;
+}
