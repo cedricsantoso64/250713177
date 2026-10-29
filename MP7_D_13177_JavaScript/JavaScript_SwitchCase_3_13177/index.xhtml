@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <title>Switch-Case: Pilihan Transportasi</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        var sInput;
+
+        sInput = prompt("Pilih transportasi (K)ereta, (B)us, (P)esawat, (M)otor", "K");
+
+        switch(sInput) {
+            case "K":
+                alert("Naik Kereta: berangkat dari stasiun");
+                break;
+            case "B":
+                alert("Naik Bus: berangkat dari terminal");
+                break;
+            case "P":
+                alert("Naik Pesawat: berangkat dari bandara");
+                break;
+            case "M":
+                alert("Naik Motor: berangkat dari rumah");
+                break;
+            default:
+                alert("Transportasi tidak tersedia");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Switch-Case: Pilihan Transportasi</h1>
+    <p>Reload halaman untuk mencoba lagi.</p>
+</body>
+
+</html>
