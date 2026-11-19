@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="js/elemen.js"></script>
+    <title>Bonus DOM - Kalkulator Bangun Datar</title>
+</head>
+
+<body>
+    <h3>Kalkulator &amp; Bentuk Bangun Datar (DOM)</h3>
+    <p>Pilih Bangun Datar:
+        <select id="jenisBangun" onchange="ubahLabelBangun()">
+            <option value="persegi">Persegi</option>
+            <option value="lingkaran">Lingkaran</option>
+        </select>
+    </p>
+    <p><span id="labelUkuran">Panjang Sisi (cm)</span>: <input id="nilaiUkuran" value="7" /></p>
+    <p><input type="button" value="Hitung Bangun" onclick="hitungBangun()" /></p>
+    <p>Luas: <span id="bonusLuas">0</span> cm&sup2;</p>
+    <p>Keliling: <span id="bonusKeliling">0</span> cm</p>
+    <div id="bentukVisual" style="width: 100px; height: 100px; background-color: coral;
+    border: 2px solid black;"></div>
+</body>
+
+</html>
